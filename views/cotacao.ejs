@@ -1,0 +1,12 @@
+<%- include('header') %>
+
+<div class="results">
+    <% if(error) { %>
+        <%= error %>
+    <% } else { %>
+        <%= amount %> US$  converted to R$ with the exchange rate of 
+        <%= exchangeRate %> US$ is equivalent to <%= convertedValue %> R$
+    <% } %>
+</div>
+
+<%- include('footer') %>
